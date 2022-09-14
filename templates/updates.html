@@ -1,0 +1,414 @@
+{% extends "layout.html" %}
+{% block body %}
+
+
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>COVOID-19 Probability Detector</title>
+</head>
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+
+    #div3 {
+        transition: width 2s, height 2s, transform 2s;
+    }
+
+    #div1:hover {
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    #div1 {
+        transition: width 2s, height 2s, transform 2s;
+    }
+
+    #div2:hover {
+
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    #div2 {
+        transition: width 2s, height 2s, transform 2s;
+    }
+
+    #div3:hover {
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+</style>
+
+
+
+
+
+
+
+
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="/home">COVID Resources India</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="/home">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Resources</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/updates">Updates</a>
+                    </li>
+
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/map">Map</a>
+                    </li>
+
+                </ul>
+
+                <form class="form-inline mt-2 mt-md-0">
+
+                    <a href="https://delhifightscorona.in/testing" class="btn btn-outline-success my-2 my-sm-0"
+                        type="submit">Delhi centers</a>
+                </form>
+
+
+            </div>
+
+            </div>
+        </nav>
+
+    </header>
+    <header
+        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+                <use xlink:href="#bootstrap"></use>
+            </svg>
+        </a>
+
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+
+            <li><a href="/map" class="nav-link px-2 link-dark">Map</a></li>
+            <li><a href="/plasma" class="nav-link px-2 link-dark">Plasma Donation</a></li>
+            <li><a href="#" class="nav-link px-2 link-dark">Request Plasma</a></li>
+            <li><a href="#" class="nav-link px-2 link-dark">Vaccination</a></li>
+            <li><a href="/about" class="nav-link px-2 link-dark">About</a></li>
+        </ul>
+
+        <div class="col-md-3 text-end">
+
+
+        </div>
+    </header>
+
+
+    <main>
+
+
+
+        <section class="jumbotron text-center">
+            <div class="container">
+                <h1 class="jumbotron-heading" style="color:rgb(24, 112, 64);">Covid-19 Updates</h1>
+                <p class>The virus that causes COVID-19 is mainly transmitted through droplets generated when an
+                    infected person coughs, sneezes, or exhales. These droplets are too heavy to hang in the air, and
+                    quickly fall on floors or surfaces.</p>
+                <p>
+                    <a href="https://www.worldometers.info/coronavirus/" target="_blank" rel="noopener noreferrer"
+                        class="btn btn-primary my-2">Check </a>
+
+                </p>
+            </div>
+        </section>
+
+
+        <h1 class="text-center text-capitalize pt-5" style="color:rgb(238, 145, 39);">NEWS</h1>
+        <hr class="w-50 mx-auto pt-5">
+
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <div class="row">
+
+
+
+
+
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow" id="div2">
+                            <img class="card-img-top" src="https://source.unsplash.com/400x200/?corona vaccine"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Delhi records 126 coronavirus cases, no deaths in last 24 hours
+                                    Delhi recorded as many as 126 fresh coronavirus cases on Saturday. With this,
+                                    the
+                                    tally of COVID-19 cases in the national capital has reached over 6.36 lakh,
+                                    while
+                                    the death toll mounted to 10,889.></p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="https://www.indiatvnews.com/news/india/delhi-coronavirus-cases-delhi-covid-19-death-toll-684693"
+                                            class="btn btn-primary my-2">View</a>
+
+
+                                    </div>
+                                    <small class="text-muted">2 Hours</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+
+
+
+                        <div class="card mb-4 box-shadow" id="div1">
+
+                            <iframe width="349" height="225" src="https://www.youtube.com/embed/5zs66WQeJRY"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+
+                            <div class="card-body">
+                                <p class="card-text">As many as 100 people will be vaccinated at each of these
+                                    locations
+                                    per day, Delhi Chief Minister Arvind Kejriwal had announced on Thursday..</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="https://www.youtube.com/embed/5zs66WQeJRY"
+                                            class="btn btn-primary my-2">View</a>
+
+                                    </div>
+                                    <small class="text-muted">40 mins</small>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow" id="div3">
+                            <img class="card-img-top" src="https://source.unsplash.com/400x200/?corona vacci"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Two days ahead of the massive coronavirus inoculation drive,
+                                    authorities have released a list of 81 sites that will be part of the
+                                    immunisation
+                                    exercise in the national capital, with a senior official saying Covishield will
+                                    be
+                                    administered at 75 centres, while Covaxin will be given at the remaining six
+                                    facilities.
+                                    .</p>
+                                <div class="d-flex justify-content-between align-items-center">
+
+                                    <a href="https://www.livemint.com/news/india/covid-vaccination-in-delhi-75-sites-for-covishield-6-for-covaxin-full-list-11610686863670.html"
+                                        class="btn btn-primary my-2">View</a>
+
+                                    <small class="text-muted">10mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section>
+
+
+
+
+
+            <div class="conatiner">
+                <h1 class="text-center text-capitalize pt-5">Corona vaccine</h1>
+                <hr class="w-50 mx-auto pt-5">
+
+
+                <div class="album py-5 bg-light">
+                    <div class="container">
+                        <div class="row">
+
+
+
+
+
+                            <div class="row mb-7">
+                                <div class="col-lg-4 col-md-4 col-12">
+                                    <div class="card" id="div1">
+                                        <img class="card-img-top"
+                                            src="https://source.unsplash.com/400x200/?corona test center" alt="">
+                                        <div class="card-body">
+                                            <h4 class="card-title">NDTV</h4>
+                                            <p class="card-text">.India Registers Over 9,000 New COVID-19
+                                                Cases, 87 Deaths In Last 24 Hours</p>
+                                            <a href="https://www.ndtv.com/world-news/not-perfect-but-saves-lives-says-astrazeneca-ceo-on-covid-vaccine-2368421"
+                                                class="btn btn-primary">view</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-4 col-12">
+                                    <div class="card" id="div2">
+                                        <img class="card-img-top"
+                                            src="https://source.unsplash.com/400x200/?corona vacci" alt="">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Times of india</h4>
+                                            <p class="card-text">Coronavirus live updates: Over 77.66,31
+                                                lakh beneficiaries vaccinated so far, says
+                                                health ministry</p>
+                                            <a href="https://timesofindia.indiatimes.com/life-style/health-fitness/health-news/coronavirus-vaccine-5-ways-to-boost-your-immune-response-against-the-covid-19-vaccine/photostory/80855207.cms"
+                                                class="btn btn-primary">View</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-4 col-12">
+                                    <div class="card" id="div3">
+                                        <img class="card-img-top"
+                                            src="https://source.unsplash.com/400x200/?corona protection" alt="">
+                                        <div class="card-body">
+                                            <h4 class="card-title">WHO</h4>
+                                            <p class="card-text">Coronavirus Disease 2019. Official Public
+                                                Service Announcement on Coronavirus from the
+                                                WHO. Learn about Symptoms, Prevention, Travel Advisory and
+                                                Common FAQs on Coronavirus. Learn about
+                                                Coronavirus. Official info on COVID-19. Official WHO
+                                                website.</p>
+                                            <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/World Health Organization"
+                                                class="btn btn-primary">View</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+
+        <hr>
+
+
+        <div class="contaner  mt-4 p-5 ">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/ChQvQgjw_lg" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+{% endblock %}

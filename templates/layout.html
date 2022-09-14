@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title> Covid Resources India</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="{{ url_for('static', filename='vendor/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet"
+    type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet'
+    type='text/css'>
+  <link
+    href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+    rel='stylesheet' type='text/css'>
+
+    <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<div class="conatiner-fluid px-0">
+
+
+  <!-- Custom styles for this template -->
+  <link href="{{ url_for('static', filename='css/clean-blog.min.css') }}" rel="stylesheet">
+
+</head>
+<style>
+
+  /* unvisited link */
+  a:link {
+      color: rgb(230, 205, 46);
+  }
+
+  /* visited link */
+  a:visited {
+      color: rgb(240, 158, 64);
+  }
+
+  /* mouse over link */
+  a:hover {
+      color: rgb(30, 214, 168);
+  }
+
+  /* selected link */
+  a:active {
+      color: blue;
+  }
+
+
+
+
+
+
+</style>
+<body>
+
+  <!-- Navigation -->
+
+  <div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+               <a class="nav-link active" aria-current="page" href="#">Home</a>
+             </li>
+             {% if session.log %}
+             <li class="nav-item">
+               <a class="nav-link" href="/home">Home</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="/about">About</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="/contact">Contact</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="/updates">Updates</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="/login">Login</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="/register">Register</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="/map">Map</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="/login"></a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="/register">Register</a>
+             </li>
+             <li class="nav-item">
+                <a class="nav-link" href="/plasma">Plasma</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/requestplasma">Rplasma</a>
+              </li>
+             {% else %}
+             <li class="nav-item">
+               <a class="nav-link" href="/home">Home</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="/about">About</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="/contact">Contact</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="/updates">Updates</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="/login">Login</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="/register">Register</a>
+             </li>
+             {% endif %}
+    </ul>
+  </div>
+  </div>
+  </nav>
+
+
+
+
+
+
+
+  {% block body %} 
+  
+  {% endblock %}
+
+  <hr>
+
+  <hr class="featurette-divider">
+
+</div>
+
+<footer class="container-fluid py-5 bg-dark text-white">
+  <div class="row">
+    <div class="col-12 col-md">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img"
+        viewBox="0 0 24 24">
+        <title>Product</title>
+        <circle cx="12" cy="12" r="10" />
+        <path
+          d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94" />
+      </svg>
+      <small class="d-block mb-3 text-muted">&copy; 2017–2021</small>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Covid-19</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="link-secondary" href="#">About Us</a></li>
+        <li><a class="link-secondary" href="#">Latest Updates</a></li>
+        <li><a class="link-secondary" href="#">Privacy Policy</a></li>
+        <li><a class="link-secondary" href="#">Blogs</a></li>
+        <li><a class="link-secondary" href="#">Contact Us</a></li>
+
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Resources</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="link-secondary" href="#">Resource name</a></li>
+        <li><a class="link-secondary" href="#">Resource</a></li>
+        <li><a class="link-secondary" href="#">Another resource</a></li>
+        <li><a class="link-secondary" href="#">Final resource</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Website Links</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="link-secondary" href="#">Ministry of Home Affairs</a></li>
+        <li><a class="link-secondary" href="#">Ministry of Health and Family welfare</a></li>
+        <li><a class="link-secondary" href="#">Ministry of External Affairs</a></li>
+        <li><a class="link-secondary" href="#">National Health Portal of India</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>About</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="link-secondary" href="#">Team</a></li>
+        <li><a class="link-secondary" href="#">Locations</a></li>
+        <li><a class="link-secondary" href="#">Privacy</a></li>
+        <li><a class="link-secondary" href="#">Terms</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<footer class="text-white bg-dark">
+  <div class="container">
+    <p class="float-right">
+      <a href="#"><img src="/static/img/logo.jpg" alt="..." style="width:90px;height:90px;">Back to top</a>
+    </p>
+    <p> CopyRight &copy;Covid Resources India</p>
+    <p> Corona Guidelines <a href="/home">Visit the homepage</a>.</p>
+  </div>
+</footer>
+
+
+
+
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="{{ url_for('static', filename='js/clean-blog.min.js') }}"></script>
+
+</body>
+
+</html>
